@@ -1,5 +1,5 @@
 --[[
-this is just a modified version of salad.tk
+salad.tk but modified lol
 ]]
 getgenv().values = {}
 local library = {}
