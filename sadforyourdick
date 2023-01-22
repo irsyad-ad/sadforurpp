@@ -5580,7 +5580,7 @@ local chat = misc:Sector("chat", "Left")
 chat:Element("Toggle", "chat spam", nil, function(tbl)
 if tbl.Toggle then
 while values.misc.chat["chat spam"].Toggle do
-game:GetService("ReplicatedStorage").Events.PlayerChatted:FireServer(values.misc.chat.type.Dropdown == "WOWOWOW I LOVE TER.ANTIPEN" and "WOWOWOW I LOVE TER.ANTIPEN" or "ja_fv rules the world!" or "wowow sad4cfg on top" or "@BallerYer", false, "Innocent", false, true)
+game:GetService("ReplicatedStorage").Events.PlayerChatted:FireServer(values.misc.chat.type.Dropdown == "WOWOWOW I LOVE TER.ANTIPEN" and "WOWOWOW I LOVE TER.ANTIPEN" or "Doing the griddy for ukraine, Vladimir Putin you should be scared" or "wowow sad4cfg on top" or "@BallerYer", false, "Innocent", false, true)
 wait(values.misc.chat["speed (ms)"].Slider/1000)
 
 end
@@ -5588,7 +5588,7 @@ end
 end)
 world:Element('Toggle', 'Killsoundtoggle')
 world:Element('TextBox', 'Killsound', {placeholder = "ID HERE"})
-chat:Element("Dropdown", "type", {options = {"ter.antipen", "ja_fv saviour"}})
+chat:Element("Dropdown", "type", {options = {"ter.antipen", "griddy", "sad4cfg"}})
 chat:Element("Slider", "speed (ms)", {min = 15, max = 300, default = 50})
 chat:Element("Toggle", "kill say")
 chat:Element("TextBox", "message", {placeholder = "message"})
@@ -5679,8 +5679,8 @@ LoadedAnim:Play()
 end
 end
 end)
-animations:Element("Dropdown", "animation", {options = {"breakdown", "duns", "levitate", "gof walk", "lazy", "not my fault", "sneaky", "T"}}, function(tbl)
-Dance.AnimationId = tbl.Dropdown == "breakdown" and "rbxassetid://10214311282" or tbl.Dropdown == "duns" and "rbxassetid://5917459365" or tbl.Dropdown == "levitate" and "rbxassetid://11394033602" or tbl.Dropdown == "gof walk" and "rbxassetid://507784897" or tbl.Dropdown == "lazy" and "rbxassetid://507766388" or tbl.Dropdown == "not my fault" and "rbxassetid://6797891807" or tbl.Dropdown == "Sneaky" and "rbxassetid://896541152" or tbl.Dropdown == "T" and "rbxassetid://3338010159"
+animations:Element("Dropdown", "animation", {options = {"breakdown", "duns", "levitate", "gof walk", "griddy", "not my fault", "sneaky", "T"}}, function(tbl)
+Dance.AnimationId = tbl.Dropdown == "breakdown" and "rbxassetid://10214311282" or tbl.Dropdown == "duns" and "rbxassetid://5917459365" or tbl.Dropdown == "levitate" and "rbxassetid://11394033602" or tbl.Dropdown == "gof walk" and "rbxassetid://507784897" or tbl.Dropdown == "griddy" and "rbxassetid://12240086459" or tbl.Dropdown == "not my fault" and "rbxassetid://6797891807" or tbl.Dropdown == "Sneaky" and "rbxassetid://896541152" or tbl.Dropdown == "T" and "rbxassetid://3338010159"
 pcall(function()
 LoadedAnim:Stop()
 end)
